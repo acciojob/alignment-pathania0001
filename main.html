@@ -2,116 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Car Insurance Registration Form</title>
+  <title>HTML Assignment 3</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #eef2f3;
-      display: flex;
-      justify-content: center;
-      padding: 40px;
+    /* Common table styles */
+    table.middle {
+      border: 1px solid black;
+      border-spacing: 1px;
+    }
+    table td {
+      height: 20px;
+    }
+    table.middle th,
+    table.middle td {
+      border: 1px solid black;
+      padding: 1px;
     }
 
-    form {
-      background-color: #fff;
-      padding: 25px 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 400px;
-    }
+    /* Alignment helpers for Table 1 */
+    .center { text-align: center; }
+    .right { text-align: right; }
 
-    h2 {
-      text-align: center;
-      color: #333;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="number"],
-    input[type="date"],
-    input[type="password"],
-    select {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .radio-group {
-      margin-top: 5px;
-    }
-
-    .radio-group label {
-      font-weight: normal;
-      margin-right: 15px;
-    }
-
-    button[type="submit"] {
-      margin-top: 20px;
-      width: 100%;
-      padding: 10px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button[type="submit"]:hover {
-      background-color: #0056b3;
-    }
+    /* Row‑color helpers for Table 3 */
+    .green { background-color: green; color: white; }
+    .blue  { background-color: blue; color: white; }
   </style>
 </head>
 <body>
 
-  <form method="POST">
-    <h2>Car Insurance Registration</h2>
+  <h1 style="text-align:center;">HTML Assignment #3</h1>
 
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+  <!-- ====================  TABLE 1  ==================== -->
+  <table id="table-1" class="middle">
+    <tbody>
+      <tr>
+        <td id="t11">left</td>
+        <td id="t12" class="center">middle</td>
+        <td id="t13" class="right">right</td>
+      </tr>
+      <tr>
+        <td id="t14">left</td>
+        <td id="t15" class="center">middle</td>
+        <td id="t16" class="right">right</td>
+      </tr>
+      <tr>
+        <td id="t17">left</td>
+        <td id="t18" class="center">middle</td>
+        <td id="t19" class="right">right</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+  <!-- ====================  TABLE 2  ==================== -->
+  <table id="table-2" class="middle">
+    <tbody>
+      <tr>
+        <td id="t21" colspan="6"></td>
+      </tr>
+      <tr>
+        <td rowspan="4"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="3" rowspan="2"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="6"></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
 
-    <label>Gender</label>
-    <div class="radio-group">
-      <input type="radio" id="male" name="gender" value="Male" required>
-      <label for="male">Male</label>
-
-      <input type="radio" id="female" name="gender" value="Female">
-      <label for="female">Female</label>
-
-      <input type="radio" id="other" name="gender" value="Other">
-      <label for="other">Other</label>
-    </div>
-
-    <label for="cars">Car Brands</label>
-    <select id="cars" name="cars">
-      <option value="">--Please choose an option--</option>
-      <option value="BMW">BMW</option>
-      <option value="Audi">Audi</option>
-      <option value="Mercedez">Mercedez</option>
-    </select>
-
-    <label for="carage">Car Age</label>
-    <input type="number" id="carage" name="carage" required>
-
-    <label for="dop">Date of Purchase</label>
-    <input type="date" id="dop" name="dop" required>
-
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
-
-    <button type="submit">Submit</button>
-  </form>
+  <!-- ====================  TABLE 3  ==================== -->
+  <table id="table-3" class="middle">
+    <tbody>
+      <tr class="green">
+        <td></td>
+      </tr>
+      <tr>
+        <td id="t-image">
+          <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Sample Image">
+        </td>
+      </tr>
+      <tr class="blue">
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </body>
 </html>
